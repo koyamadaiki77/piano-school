@@ -213,6 +213,34 @@
     .about-text .section-lead { margin-bottom: 1rem; }
     .about-text p { color: var(--mid); font-size: .95rem; }
 
+    /* ── レッスン風景 ── */
+    #gallery { background: var(--cream); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.4rem;
+      margin-top: 2rem;
+    }
+    .gallery-item {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(200,131,106,.12);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      transition: transform .3s;
+    }
+    .gallery-item img:hover { transform: scale(1.03); }
+    .gallery-caption {
+      background: var(--white);
+      padding: .8rem 1.2rem;
+      font-size: .88rem;
+      color: var(--mid);
+    }
+
     /* ── レッスン ── */
     #lessons { background: var(--cream); }
     .lessons-grid {
@@ -389,6 +417,7 @@
     /* ── レスポンシブ ── */
     @media (max-width: 700px) {
       #about { grid-template-columns: 1fr; gap: 2rem; }
+      .gallery-grid { grid-template-columns: 1fr; }
       .access-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       nav ul { gap: 1.2rem; }
@@ -427,7 +456,7 @@
   <h2 class="section-title">こんな教室です</h2>
   <div class="features-grid">
     <div class="feature-card">
-      <img class="feature-img" src="images/feature-room.jpg" alt="教室の雰囲気" onerror="this.style.background='linear-gradient(135deg,#E8B4A8,#C8836A)'" />
+      <img class="feature-img" src="images/lesson-room.jpg" alt="教室の雰囲気" onerror="this.style.background='linear-gradient(135deg,#E8B4A8,#C8836A)'" />
       <div class="feature-card-body">
         <h3>アットホームな雰囲気</h3>
         <p>緊張せずにレッスンに通えるよう、温かい雰囲気を大切にしています。</p>
@@ -473,6 +502,22 @@
 一人ひとりの個性やペースを大切にしながら、楽しさと上達の両方を感じられるレッスンを心がけています。
 初めてピアノに触れる方から、コンクール・受験を目指す方まで、安心してお任せください。
       </p>
+    </div>
+  </div>
+</section>
+
+<!-- レッスン風景 -->
+<section id="gallery">
+  <div class="section-label">Gallery</div>
+  <h2 class="section-title">レッスン風景</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/lesson-students.png" alt="生徒さんとのレッスン風景" />
+      <div class="gallery-caption">生徒さんとのレッスン</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/lesson-adult.jpg" alt="大人のレッスン風景" />
+      <div class="gallery-caption">大人の生徒さんとのレッスン</div>
     </div>
   </div>
 </section>
