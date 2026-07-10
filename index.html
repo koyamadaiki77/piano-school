@@ -270,6 +270,35 @@
     }
     .lesson-card p { font-size: .88rem; color: var(--mid); }
 
+    .lessons-group-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1rem;
+      color: var(--primary);
+      border-bottom: 1px solid var(--rose);
+      padding-bottom: .5rem;
+      margin: 2rem 0 1rem;
+    }
+    .lessons-notes {
+      margin-top: 2rem;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 1.4rem 1.8rem;
+      font-size: .88rem;
+      color: var(--mid);
+    }
+    .lessons-notes li {
+      list-style: none;
+      padding: .3rem 0;
+      padding-left: 1.2em;
+      position: relative;
+    }
+    .lessons-notes li::before {
+      content: '♪';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
     /* ── 申し込みフォーム ── */
     #contact { max-width: 720px; margin: 0 auto; }
     #contact-wrap { background: var(--cream); }
@@ -526,29 +555,61 @@
 <section id="lessons">
   <div class="section-label">Lessons</div>
   <h2 class="section-title">レッスン内容・月謝</h2>
-  <p class="section-lead">※ 月謝は目安です。レッスン回数・時間によって変わります。詳しくはお問い合わせください。</p>
+
+  <p class="lessons-group-title">月4回コース　1回 30〜40分</p>
   <div class="lessons-grid">
     <div class="lesson-card">
-      <h3>幼児・小学生コース</h3>
-      <div class="price">月 ¥8,000〜¥10,000</div>
-      <p>週1回 30〜60分。楽しく基礎から丁寧に指導します。</p>
+      <h3>幼稚園</h3>
+      <div class="price">¥8,000〜</div>
+      <p>ピアノ・ソルフェージュ</p>
     </div>
     <div class="lesson-card">
-      <h3>中高生コース</h3>
-      <div class="price">月 ¥11,000〜</div>
-      <p>週1回 45〜60分。クラシック・ポップス・好みの曲も可。</p>
+      <h3>小学生</h3>
+      <div class="price">¥9,000〜10,000</div>
+      <p>ピアノ・ソルフェージュ</p>
     </div>
     <div class="lesson-card">
-      <h3>大人コース</h3>
-      <div class="price">30分 ¥3,000</div>
-      <p>お好きな曲からはじめられます。趣味・リフレッシュにどうぞ。</p>
+      <h3>中学生</h3>
+      <div class="price">¥9,500〜11,000</div>
+      <p>ピアノ・ソルフェージュ</p>
     </div>
     <div class="lesson-card">
-      <h3>体験レッスン</h3>
-      <div class="price">¥1,000（45分）</div>
-      <p>雰囲気を確かめてからご入会いただけます。お気軽にどうぞ。</p>
+      <h3>高校生</h3>
+      <div class="price">¥9,500〜12,000</div>
+      <p>ピアノ</p>
+    </div>
+    <div class="lesson-card">
+      <h3>一般</h3>
+      <div class="price">¥12,000〜</div>
+      <p>ピアノ</p>
     </div>
   </div>
+
+  <p class="lessons-group-title">月2回コース　中学生・高校生・一般の方向け</p>
+  <div class="lessons-grid">
+    <div class="lesson-card">
+      <h3>中学生</h3>
+      <div class="price">¥6,000〜</div>
+      <p>ピアノ</p>
+    </div>
+    <div class="lesson-card">
+      <h3>高校生</h3>
+      <div class="price">¥6,000〜</div>
+      <p>ピアノ</p>
+    </div>
+    <div class="lesson-card">
+      <h3>一般</h3>
+      <div class="price">¥6,000〜</div>
+      <p>ピアノ</p>
+    </div>
+  </div>
+
+  <ul class="lessons-notes">
+    <li>月謝は毎月、前の月の最後のレッスン日にお納めください。</li>
+    <li>1月（お正月）・8月（お盆）は月3回のレッスンとなります。</li>
+    <li>楽譜は各自お求めいただいております。</li>
+    <li>月謝は目安です。詳しくはお気軽にお問い合わせください。</li>
+  </ul>
 </section>
 
 <!-- 申し込みフォーム -->
